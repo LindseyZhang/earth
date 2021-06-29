@@ -1,0 +1,5 @@
+name: 'Start server'
+description: 'start server'
+runs:
+  using: 'node14'
+  main: 'dev-server.js'
