@@ -25,7 +25,6 @@ jobs:
       run: |
         npm install
         npm run build --if-present
-        npm run test --if-present
 
     - name: Upload artifact for deployment job
       uses: actions/upload-artifact@v2
@@ -54,3 +53,7 @@ jobs:
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_7043ea10f32e46e08acdf7cf3d8dec8c }}
         package: .
+        
+    - name: Start service
+      run: |
+        echo "node dev-server.js 8080"
