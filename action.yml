@@ -1,10 +1,5 @@
-name: 'Twitter Bio Update'
-description: 'Update your Twitter Account Bio'
-inputs:
-  bio:
-    description: 'Text that you would like to set as your Twitter Bio'
-    required: true
-    default: 'Hello, World!'
+name: 'start server'
+description: 'start server'
 runs:
-  using: 'node12'
-  main: 'index.js'
+  using: 'node14'
+  main: 'dev-server.js'
